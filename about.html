@@ -1,0 +1,405 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about the history, location, population, vision, and mission of Barangay Canitoan — a proud community in the heart of the Philippines." />
+  <title>About — Barangay Canitoan</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo.jpg" />
+</head>
+<body>
+
+<button id="back-to-top" aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg></button>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar" aria-label="Main navigation">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo"><img src="images/logo.jpg" alt="Barangay Canitoan Seal" /></div>
+      <div class="nav-title"><span>Barangay</span><span>Canitoan</span></div>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link active">About</a></li>
+      <li><a href="officials.html" class="nav-link">Officials</a></li>
+      <li><a href="attractions.html" class="nav-link">Attractions</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="festivals.html" class="nav-link">Festivals</a></li>
+      <li><a href="hotlines.html" class="nav-link">Hotlines</a></li>
+      <li><a href="services.html" class="nav-link">Services & Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('images/about_community.jpg') no-repeat center center; background-size: cover; color: #ffffff; padding: calc(var(--nav-height) + 4.5rem) 0 5rem;">
+  <div class="container">
+    <div class="page-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html" style="color: rgba(250, 252, 255, 0.7); text-decoration: none;">Home</a>
+        <span class="breadcrumb-sep" style="color: rgba(250, 252, 255, 0.4);">›</span>
+        <span style="color: #ffffff;">About the Barangay</span>
+      </nav>
+      <span class="section-tag" style="background: rgba(255, 69, 0, 0.2); border-color: rgba(255, 69, 0, 0.4); color: #ffffff;">Our Story</span>
+      <h1 class="page-hero-title" style="color: #ffffff;">About <span style="color:var(--primary)">Barangay Canitoan</span></h1>
+      <p class="page-hero-subtitle" style="color: rgba(250, 252, 255, 0.85);">Profile, subdivisions, mission, and official seal explanation</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROFILE & HISTORY -->
+<section class="section" aria-labelledby="profile-heading">
+  <div class="container">
+    <div class="grid-2" style="align-items:center; gap:4rem;">
+      <div class="animate-on-scroll">
+        <div class="section-header" style="text-align:left; margin-bottom:2rem;">
+          <span class="section-tag">Overview</span>
+          <h2 class="section-title" id="profile-heading">Barangay Profile</h2>
+        </div>
+        <p style="color:var(--text-primary); font-size:1.05rem; margin-bottom:1.25rem; line-height:1.8;">
+          Barangay Canitoan is situated in the western part of Cagayan de Oro City. It is characterized by a combination of residential communities, commercial developments, agricultural lands, and institutional establishments.
+        </p>
+        <p style="color:var(--text-muted); margin-bottom:1.25rem; line-height:1.8;">
+          Continuous infrastructure development has transformed the barangay into one of the city's major growth areas while maintaining its commitment to environmental protection and community welfare.
+        </p>
+      </div>
+
+      <div class="card about-card-interactive animate-on-scroll" onclick="toggleCard(this)" style="padding: 2.5rem; background: var(--bg-card); border-top: 4px solid var(--primary);">
+        <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+          Geographic Boundaries
+        </h3>
+        <table class="hours-table">
+          <tr>
+            <td>North</td>
+            <td style="color:var(--text-primary); font-weight:600; text-align:right;">Barangay Patag</td>
+          </tr>
+          <tr>
+            <td>South</td>
+            <td style="color:var(--text-primary); font-weight:600; text-align:right;">Barangay Pagatpat</td>
+          </tr>
+          <tr>
+            <td>East</td>
+            <td style="color:var(--text-primary); font-weight:600; text-align:right;">Barangay Carmen</td>
+          </tr>
+          <tr>
+            <td>West</td>
+            <td style="color:var(--text-primary); font-weight:600; text-align:right;">Barangay Iponan</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POLITICAL SUBDIVISIONS (ZONES) -->
+<section class="section section-alt" aria-labelledby="zones-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Organization</span>
+      <h2 class="section-title" id="zones-heading">Political Subdivisions (Zones)</h2>
+      <p class="section-desc">Barangay Canitoan is divided into ten (10) zones. Click cards to activate highlight.</p>
+    </div>
+
+    <div class="grid-3" style="gap:1.5rem;">
+      <div class="card about-card-interactive animate-on-scroll" onclick="toggleCard(this)" style="padding:1.5rem;">
+        <span class="card-tag">Zone 1</span>
+        <h3 class="card-title">Ilaya &amp; Tangke</h3>
+        <p class="card-desc">Traditional residential sectors located in the core parts of the community.</p>
+      </div>
+      <div class="card about-card-interactive animate-on-scroll" onclick="toggleCard(this)" style="padding:1.5rem;">
+        <span class="card-tag">Zone 2</span>
+        <h3 class="card-title">Centro, GSIS &amp; Isla</h3>
+        <p class="card-desc">Includes the Centro area, GSIS Subdivision, Isla, and Manticao Drive.</p>
+      </div>
+      <div class="card about-card-interactive animate-on-scroll" onclick="toggleCard(this)" style="padding:1.5rem;">
+        <span class="card-tag">Zone 3</span>
+        <h3 class="card-title">Scions &amp; Macapaya</h3>
+        <p class="card-desc">Phase 1 &amp; Phase 2 Scions Subdivision and Macapaya residential area.</p>
+      </div>
+      <div class="card about-card-interactive animate-on-scroll" onclick="toggleCard(this)" style="padding:1.5rem;">
+        <span class="card-tag">Zone 4</span>
+        <h3 class="card-title">Looc, Agong &amp; Hillside</h3>
+        <p class="card-desc">Includes Sitios Looc, Agong, and the surrounding Hillside communities.</p>
+      </div>
+      <div class="card about-card-interactive animate-on-scroll" onclick="toggleCard(this)" style="padding:1.5rem;">
+        <span class="card-tag">Zone 5</span>
+        <h3 class="card-title">Relocation Site &amp; Reyes</h3>
+        <p class="card-desc">Phase 1, Phase 2A and B Relocation Site, and Reyes Compound.</p>
+      </div>
+      <div class="card about-card-interactive animate-on-scroll" onclick="toggleCard(this)" style="padding:1.5rem;">
+        <span class="card-tag">Zone 6</span>
+        <h3 class="card-title">Calaanan &amp; Springside</h3>
+        <p class="card-desc">Sitios Calaanan, Puli, and the Springside residential area.</p>
+      </div>
+      <div class="card about-card-interactive animate-on-scroll" onclick="toggleCard(this)" style="padding:1.5rem;">
+        <span class="card-tag">Zone 7</span>
+        <h3 class="card-title">GSIS Housing &amp; Flores</h3>
+        <p class="card-desc">Old PN Roa Road, GSIS Housing, and Flores Compound.</p>
+      </div>
+      <div class="card about-card-interactive animate-on-scroll" onclick="toggleCard(this)" style="padding:1.5rem;">
+        <span class="card-tag">Zone 8</span>
+        <h3 class="card-title">Upper Canitoan</h3>
+        <p class="card-desc">The elevated highland sector of the barangay with scenic views.</p>
+      </div>
+      <div class="card about-card-interactive animate-on-scroll" onclick="toggleCard(this)" style="padding:1.5rem;">
+        <span class="card-tag">Zone 9</span>
+        <h3 class="card-title">PN Roa Subdivision</h3>
+        <p class="card-desc">Major residential housing subdivision for families.</p>
+      </div>
+      <div class="card about-card-interactive animate-on-scroll" onclick="toggleCard(this)" style="padding:1.5rem; grid-column:span 3; max-width:400px; margin:0 auto;" id="zone-10-card">
+        <span class="card-tag">Zone 10</span>
+        <h3 class="card-title">Oro Habitat &amp; Relocations</h3>
+        <p class="card-desc">Oro Habitat, Mahogany Village, Talongan Village, Quadruplex, and nearby relocation communities.</p>
+      </div>
+    </div>
+    
+    <style>
+      @media (max-width: 900px) {
+        #zone-10-card { grid-column: span 2; margin: 0; max-width: none; }
+      }
+      @media (max-width: 580px) {
+        #zone-10-card { grid-column: span 1; }
+      }
+    </style>
+  </div>
+</section>
+
+<!-- VISION, MISSION & VALUES -->
+<section class="section" aria-labelledby="vm-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Purpose</span>
+      <h2 class="section-title" id="vm-heading">Vision &amp; Mission</h2>
+    </div>
+
+    <div class="grid-2" style="gap:2rem; margin-bottom:4rem;">
+      <div class="vm-card about-card-interactive animate-on-scroll" onclick="toggleCard(this)">
+        <h3>Vision</h3>
+        <p>A progressive and resilient barangay where healthy and disciplined people live.</p>
+      </div>
+      <div class="vm-card about-card-interactive animate-on-scroll" onclick="toggleCard(this)">
+        <h3>Mission</h3>
+        <p style="font-style:normal; font-size:0.95rem; color:var(--text-muted); line-height:1.7;">
+          The Barangay Government of Canitoan is committed to:
+        </p>
+        <ul style="margin-top:1rem; display:flex; flex-direction:column; gap:0.6rem;">
+          <li style="display:flex; gap:0.5rem; font-size:0.92rem; color:var(--text-primary);"><span style="color:var(--primary);">•</span> Delivering efficient, transparent, and responsive public service.</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.92rem; color:var(--text-primary);"><span style="color:var(--primary);">•</span> Promoting peace, security, and social order.</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.92rem; color:var(--text-primary);"><span style="color:var(--primary);">•</span> Strengthening disaster preparedness and community resilience.</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.92rem; color:var(--text-primary);"><span style="color:var(--primary);">•</span> Protecting the environment through sustainable programs.</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.92rem; color:var(--text-primary);"><span style="color:var(--primary);">•</span> Supporting education, health, youth, senior citizens, women, and persons with disabilities.</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.92rem; color:var(--text-primary);"><span style="color:var(--primary);">•</span> Encouraging active citizen participation in governance.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Core Values -->
+    <div>
+      <h3 style="text-align:center; font-size:1.05rem; font-weight:800; color:var(--primary); margin-bottom:2.5rem; text-transform:uppercase; letter-spacing:0.1em;">Core Values</h3>
+      <div class="grid-4" style="gap:1rem;">
+        <div class="card-flip-container animate-on-scroll">
+          <div class="card-flip" onclick="toggleFlipCard(this)">
+            <div class="card-front">
+              <h4>Integrity</h4>
+            </div>
+            <div class="card-back">
+              <p>We serve our citizens with honesty, transparency, and high moral standards in all public services.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-flip-container animate-on-scroll">
+          <div class="card-flip" onclick="toggleFlipCard(this)">
+            <div class="card-front">
+              <h4>Accountability</h4>
+            </div>
+            <div class="card-back">
+              <p>We take full responsibility for our actions, administrative decisions, policies, and community resources.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-flip-container animate-on-scroll">
+          <div class="card-flip" onclick="toggleFlipCard(this)">
+            <div class="card-front">
+              <h4>Transparency</h4>
+            </div>
+            <div class="card-back">
+              <p>We keep public records, official transactions, and barangay council decisions open and accessible to all residents.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-flip-container animate-on-scroll">
+          <div class="card-flip" onclick="toggleFlipCard(this)">
+            <div class="card-front">
+              <h4>Excellence</h4>
+            </div>
+            <div class="card-back">
+              <p>We strive to deliver the highest quality of service, administrative efficiency, and prompt public response.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-flip-container animate-on-scroll">
+          <div class="card-flip" onclick="toggleFlipCard(this)">
+            <div class="card-front">
+              <h4>Unity</h4>
+            </div>
+            <div class="card-back">
+              <p>We work hand-in-hand with all zones, subdivisions, and local sectors to build a cohesive community.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-flip-container animate-on-scroll">
+          <div class="card-flip" onclick="toggleFlipCard(this)">
+            <div class="card-front">
+              <h4>Respect</h4>
+            </div>
+            <div class="card-back">
+              <p>We honor the diverse voices, beliefs, cultural backgrounds, and rights of every Canitoan citizen.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-flip-container animate-on-scroll">
+          <div class="card-flip" onclick="toggleFlipCard(this)">
+            <div class="card-front">
+              <h4>Compassion</h4>
+            </div>
+            <div class="card-back">
+              <p>We prioritize the welfare of vulnerable sectors, providing social assistance, care, and active outreach.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-flip-container animate-on-scroll">
+          <div class="card-flip" onclick="toggleFlipCard(this)">
+            <div class="card-front">
+              <h4>Stewardship</h4>
+            </div>
+            <div class="card-back">
+              <p>We actively protect and conserve our environment, local resources, and public lands for future generations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFICIAL SEAL EXPLANATION -->
+<section class="section section-alt" aria-labelledby="seal-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Identity</span>
+      <h2 class="section-title" id="seal-heading">The Official Barangay Seal</h2>
+      <p class="section-desc">The official seal represents the identity, values, and aspirations of Barangay Canitoan.</p>
+    </div>
+
+    <div class="grid-2" style="align-items:center; gap:4rem;">
+      <div style="display:flex; justify-content:center;" class="animate-on-scroll">
+        <img src="images/logo.jpg" alt="Barangay Canitoan Official Seal" style="max-width:280px; border-radius:50%; border:5px solid #ffffff; box-shadow:var(--shadow-md);" />
+      </div>
+
+      <div class="animate-on-scroll">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div class="card about-card-interactive" onclick="toggleCard(this)" style="padding:1.25rem; background:var(--bg-card); border:1px solid var(--border);">
+            <h4 style="font-weight:700; color:var(--primary); font-size:0.95rem; margin-bottom:0.25rem;">Orange Circle</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">Unity, leadership, and community spirit.</p>
+          </div>
+          <div class="card about-card-interactive" onclick="toggleCard(this)" style="padding:1.25rem; background:var(--bg-card); border:1px solid var(--border);">
+            <h4 style="font-weight:700; color:var(--primary); font-size:0.95rem; margin-bottom:0.25rem;">Mountains</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">Natural landscape and resilience.</p>
+          </div>
+          <div class="card about-card-interactive" onclick="toggleCard(this)" style="padding:1.25rem; background:var(--bg-card); border:1px solid var(--border);">
+            <h4 style="font-weight:700; color:var(--primary); font-size:0.95rem; margin-bottom:0.25rem;">Cross</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">Faith and spiritual guidance.</p>
+          </div>
+          <div class="card about-card-interactive" onclick="toggleCard(this)" style="padding:1.25rem; background:var(--bg-card); border:1px solid var(--border);">
+            <h4 style="font-weight:700; color:var(--primary); font-size:0.95rem; margin-bottom:0.25rem;">Buildings</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">Urbanization and economic development.</p>
+          </div>
+          <div class="card about-card-interactive" onclick="toggleCard(this)" style="padding:1.25rem; background:var(--bg-card); border:1px solid var(--border);">
+            <h4 style="font-weight:700; color:var(--primary); font-size:0.95rem; margin-bottom:0.25rem;">Houses</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">Families and residential growth.</p>
+          </div>
+          <div class="card about-card-interactive" onclick="toggleCard(this)" style="padding:1.25rem; background:var(--bg-card); border:1px solid var(--border);">
+            <h4 style="font-weight:700; color:var(--primary); font-size:0.95rem; margin-bottom:0.25rem;">Green Leaves</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">Agriculture and environmental conservation.</p>
+          </div>
+          <div class="card about-card-interactive" onclick="toggleCard(this)" style="padding:1.25rem; background:var(--bg-card); border:1px solid var(--border);">
+            <h4 style="font-weight:700; color:var(--primary); font-size:0.95rem; margin-bottom:0.25rem;">Open Fields</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">Fertile lands and local livelihood.</p>
+          </div>
+          <div class="card about-card-interactive" onclick="toggleCard(this)" style="padding:1.25rem; background:var(--bg-card); border:1px solid var(--border);">
+            <h4 style="font-weight:700; color:var(--primary); font-size:0.95rem; margin-bottom:0.25rem;">Blue Sky</h4>
+            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">Peace, hope, and progress.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-brand" style="margin-bottom:0.5rem;">
+          <div class="nav-logo"><img src="images/logo.jpg" alt="Barangay Canitoan Seal" /></div>
+          <div class="nav-title"><span>Barangay</span><span>Canitoan</span></div>
+        </div>
+        <p>Serving our community with dedication and integrity. Barangay Canitoan — where every person matters and every voice is heard.</p>
+
+      </div>
+      <div>
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About the Barangay</a></li>
+          <li><a href="officials.html">Our Officials</a></li>
+          <li><a href="attractions.html">Tourist Spots</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-heading">More Pages</h3>
+        <ul class="footer-links">
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="festivals.html">Festivals & Events</a></li>
+          <li><a href="hotlines.html">Emergency Hotlines</a></li>
+          <li><a href="services.html">Services & Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-heading">Contact Us</h3>
+        <div class="footer-contact-item"><span>📍</span><span>Zone 2, Barangay Canitoan , Cagayan de Oro, Philippines</span></div>
+        <div class="footer-contact-item"><span>📞</span><span>0965 261 5484</span></div>
+        <div class="footer-contact-item"><span>📧</span><span>brgycanitoan@email.com</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Barangay Canitoan. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="services.html">Privacy Policy</a>
+        <a href="services.html">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  function toggleCard(card) {
+    card.classList.toggle('active-card');
+  }
+  function toggleFlipCard(card) {
+    const allCards = document.querySelectorAll('.card-flip');
+    allCards.forEach(c => {
+      if (c !== card) {
+        c.classList.remove('flipped');
+      }
+    });
+    card.classList.toggle('flipped');
+  }
+</script>
+</body>
+</html>
+
