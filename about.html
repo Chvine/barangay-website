@@ -102,7 +102,7 @@
       <p class="section-desc">Barangay Canitoan is divided into ten (10) zones. Click cards to activate highlight.</p>
     </div>
 
-    <div class="grid-3" style="gap:1.5rem;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
       <div class="card about-card-interactive animate-on-scroll" onclick="toggleCard(this)" style="padding:1.5rem;">
         <span class="card-tag">Zone 1</span>
         <h3 class="card-title">Ilaya &amp; Tangke</h3>
@@ -148,21 +148,14 @@
         <h3 class="card-title">PN Roa Subdivision</h3>
         <p class="card-desc">Major residential housing subdivision for families.</p>
       </div>
-      <div class="card about-card-interactive animate-on-scroll" onclick="toggleCard(this)" style="padding:1.5rem; grid-column:span 3; max-width:400px; margin:0 auto;" id="zone-10-card">
+      <div class="card about-card-interactive animate-on-scroll" onclick="toggleCard(this)" style="padding:1.5rem;">
         <span class="card-tag">Zone 10</span>
         <h3 class="card-title">Oro Habitat &amp; Relocations</h3>
         <p class="card-desc">Oro Habitat, Mahogany Village, Talongan Village, Quadruplex, and nearby relocation communities.</p>
       </div>
     </div>
     
-    <style>
-      @media (max-width: 900px) {
-        #zone-10-card { grid-column: span 2; margin: 0; max-width: none; }
-      }
-      @media (max-width: 580px) {
-        #zone-10-card { grid-column: span 1; }
-      }
-    </style>
+
   </div>
 </section>
 
@@ -354,9 +347,9 @@
         <h3 class="footer-heading">Quick Links</h3>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About the Barangay</a></li>
-          <li><a href="officials.html">Our Officials</a></li>
-          <li><a href="attractions.html">Tourist Spots</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="officials.html">Officials</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
         </ul>
       </div>
       <div>
