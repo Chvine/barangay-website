@@ -155,7 +155,6 @@
 <section class="section" aria-labelledby="featured-heading">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">Key Hub</span>
       <h2 class="section-title" id="featured-heading">Community Center</h2>
     </div>
 
@@ -171,9 +170,7 @@
         </p>
         <div style="display:flex; flex-wrap:wrap; gap:1.25rem; margin-bottom:1.5rem;">
           <span style="display:flex; align-items:center; gap:0.4rem; font-size:0.85rem; color:var(--text-muted);">📍 Zone 2 Canitoan</span>
-        </div>
-        <a href="services.html" class="btn btn-primary" id="featured-gallery" style="align-self:flex-start;">Request Services</a>
-      </div>
+
     </div>
   </div>
 </section>
@@ -182,17 +179,11 @@
 <section class="section section-alt" aria-labelledby="all-attractions-heading">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">All Spots</span>
       <h2 class="section-title" id="all-attractions-heading">Notable Locations</h2>
       <p class="section-desc">A blend of municipal facilities and community institutions.</p>
     </div>
 
-    <!-- Filter Buttons -->
-    <div class="filter-bar" role="group" aria-label="Filter locations by category">
-      <button class="filter-btn active" id="filter-all" onclick="filterAttractions('all')">All Places</button>
-      <button class="filter-btn" id="filter-facilities" onclick="filterAttractions('facilities')">Facilities</button>
-      <button class="filter-btn" id="filter-institutions" onclick="filterAttractions('institutions')">Institutions</button>
-    </div>
+
 
     <div class="grid-3" id="attractions-grid">
       <!-- Facilities -->
@@ -209,7 +200,7 @@
         </div>
       </article>
 
-      <article class="attraction-card animate-on-scroll" onclick="toggleCard(this)" data-category="facilities">
+      <article class="attraction-card animate-on-scroll" onclick="toggleCard(this)" >
         <div class="attraction-img-wrap">
           <img src="images/health_center.jpg" alt="Barangay Health Center" style="width:100%; height:100%; object-fit:cover; display:block;" />
         </div>
@@ -222,7 +213,7 @@
         </div>
       </article>
 
-      <article class="attraction-card animate-on-scroll" onclick="toggleCard(this)" data-category="facilities">
+      <article class="attraction-card animate-on-scroll" onclick="toggleCard(this)" >
         <div class="attraction-img-wrap">
           <img src="images/covered_court.jpg" alt="Barangay Covered Court" style="width:100%; height:100%; object-fit:cover; display:block;" />
         </div>
@@ -235,8 +226,8 @@
         </div>
       </article>
 
-      <!-- Institutions -->
-      <article class="attraction-card animate-on-scroll" onclick="toggleCard(this)" data-category="institutions">
+  
+      <article class="attraction-card animate-on-scroll" onclick="toggleCard(this)">
         <div class="attraction-img-wrap">
           <img src="images/church.jpg" alt="Sacred Heart of Jesus Parish" style="width:100%; height:100%; object-fit:cover; display:block;" />
         </div>
@@ -249,7 +240,7 @@
         </div>
       </article>
 
-      <article class="attraction-card animate-on-scroll" onclick="toggleCard(this)" data-category="institutions">
+      <article class="attraction-card animate-on-scroll" onclick="toggleCard(this)">
         <div class="attraction-img-wrap">
           <img src="images/school.jpg" alt="Canitoan National High School" style="width:100%; height:100%; object-fit:cover; display:block;" />
         </div>
@@ -261,6 +252,60 @@
           </div>
         </div>
       </article>
+
+      <article class="attraction-card animate-on-scroll" onclick="toggleCard(this)">
+        <div class="attraction-img-wrap">
+          <img src="images/dearJoe_cafe.jpg" alt="Dear Joe Coffee & Juice" style="width:100%; height:100%; object-fit:cover; display:block;" />
+        </div>
+        <div class="attraction-body">
+          <h3>Dear Joe Coffee & Juice</h3>
+          <p>A popular local café offering a variety of coffee, tea, and refreshing juices in a cozy atmosphere.</p>
+          <div class="attraction-meta">
+            <span>📍 Midtown</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="attraction-card animate-on-scroll" onclick="toggleCard(this)">
+        <div class="attraction-img-wrap">
+          <img src="images/LAD_resort.png" alt="L.A.D. Family Resort" style="width:100%; height:100%; object-fit:cover; display:block;" />
+        </div>
+        <div class="attraction-body">
+          <h3>L.A.D. Family Resort</h3>
+          <p>A budget-friendly private getaway in Agong, Canitoan, featuring swimming pools, cottages, and overnight rooms tailored for exclusive family gatherings, team buildings, and private celebrations.</p>
+          <div class="attraction-meta">
+            <span>📍 District 4 Agong</span>
+          </div>
+        </div>
+      </article>
+      
+      <article class="attraction-card animate-on-scroll" onclick="toggleCard(this)">
+        <div class="attraction-img-wrap">
+          <img src="images/CasaDeCanitoan.png" alt="Casa de Canitoan" style="width:100%; height:100%; object-fit:cover; display:block;" />
+        </div>
+        <div class="attraction-body">
+          <h3>Casa de Canitoan</h3>
+          <p>It features a large white main building, beautifully manicured garden grounds, an outdoor swimming pool, and full bed-and-breakfast accommodations.</p>
+          <div class="attraction-meta">
+            <span>📍 Zone 2 Macapagal Drive</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="attraction-card animate-on-scroll" onclick="toggleCard(this)">
+        <div class="attraction-img-wrap">
+          <img src="images/casaCafe.png" alt="Casa Cafe" style="width:100%; height:100%; object-fit:cover; display:block;" />
+        </div>
+        <div class="attraction-body">
+          <h3>Casa Cafe</h3>
+          <p>It provides a cozy, relaxed indoor dining space alongside its newer greenhouse extension, Casa Verde, which immerses diners in lush greenery and natural glasshouse lighting.</p>
+          <div class="attraction-meta">
+            <span>📍 Zone 2 Canitoan-Pagatpat Road.</span>
+          </div>
+        </div>
+      </article>
+
+
     </div>
   </div>
 </section>
@@ -347,20 +392,7 @@
 </footer>
 
 <script src="js/main.js"></script>
-<script>
-function filterAttractions(cat) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  const btn = document.getElementById('filter-' + cat);
-  if (btn) btn.classList.add('active');
-  document.querySelectorAll('#attractions-grid .attraction-card').forEach(card => {
-    if (cat === 'all' || card.dataset.category === cat) {
-      card.style.display = 'block';
-    } else {
-      card.style.display = 'none';
-    }
-  });
-}
-</script>
+
 </body>
 </html>
 
